@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios</title>
+</head>
+<body>
+    <form action="">
+        <label> Nombre(s)</label>
+        <input type="">
+        <br>
+        <br>
+        <label> Apellido Paterno</label>
+        <input type="">
+        <br>
+        <br>
+        <label>Apellido Materno </label>
+        <input type="text">
+    </form>
+   
+    <label>Selecciona el tipo de chilaquiles</label>
+        
+        <br>
+        <label>Chilaquiles rojos</label>
+        <input type="radio"> 
+
+        <br>
+        <label>Chilaquiles verdes</label>
+        <input type="radio">
+        <br>
+        <h1>Formulario</h1>
+    <form>
+        <label for="nombre">Nombre(s)</label>
+        <input id="nombre" type="text" maxlength="50" placeholder="Escribe tu nombre aqui" required>
+
+        <br>
+        <br>
+
+        <label>Apellido Paterno</label>
+        <input>
+
+        <br>
+        <br>
+
+        <label>Apellido Materno</label>
+        <input>
+
+        <br>
+        <br>
+
+        <input type="button" value="Boton tipo Boton para la amsiedad">
+        <br>
+        <br>
+        <input type="submit" value="Boton tipo Submit para enviar mi informacion a un servidor">
+
+        <br>
+        <br>
+        
+
+        <label>Te gustan los chilaquiles?</label>
+        <input type="checkbox">
+
+        <br>
+        <label>Te gusta el aguita de Jamaica?</label>
+        <input type="checkbox">
+
+        <br>
+        <br>
+
+        <label>Email</label>
+        <input type="email"> 
+
+        <br>
+        <br>
+
+        <label>Fecha</label>
+        <input type="date">
+
+        <br>
+        <br>
+
+        <label>Hora</label>
+        <input type="time">
+
+
+        <br>
+        <br>
+
+        <label>Fecha y hora</label>
+        <input type="datetime-local">
+
+
+        <br>
+        <br>
+
+        <label>Sube un archivo</label>
+        <input type="file" accept=".png, .pdf, .docx, .rar, .mp4">
+
+
+        <br>
+        <br>
+
+        <label>Numero</label>
+        <input type="number">
+
+
+        <br>
+        <br>
+
+        <label>Contrasenia</label>
+        <input type="password">
+
+
+        <br>
+        <br>
+
+        <label>Rango</label>
+        <input type="range">
+
+
+        <br>
+        <br>
+
+        <label>Color</label>
+        <input id="color" type="color">
+
+        <br>
+        <br>
+        
+        <label>Selecciona el tipo de chilaquiles</label>
+        
+        <br>
+        <label>Chilaquiles rojos</label>
+        <input name="chilaquiles"type="radio"> 
+
+        <br>
+        <label>Chilaquiles verdes</label>
+        <input name="chilaquiles" type="radio"> 
+
+
+        <br>
+        <br>
+        
+        <br>
+        <br>
+
+    </form>
+
+
+    
+</body>
+</html>
+<!-- un formulario es una de las formas mas basicas que tenemos para recopilar informacion de los
+usuarios (informacion de inicio de sesion, de  contacto,  registro para un boletin de citas )-->
+<!--para trabjar con formularios vamos a utilizar la etiqueta form  para indicar el espacio en el que
+estara dicho elemento dentro del documento-->
+<!--la etiqueta input nos permite introducir los datos y la etiqueta label  nos sirve para darle 
+un nombre o una descripcion al input -->
+<!--Atributos para la etique form (action especifica a donde se van a enviar los datos cuando se da
+    click en enviar) ( method es el metodo del envio de los datos( get, post)
+
+La etiqueta input nos sirve para introducir los datos
+
+La etiqueta label nos sirve para darle un nombre o una descripcion al input y asi saber que informacion recibe-->
+<!--Atributos para la etiqueta input
+
+    - type: Modifica el tipo de campo que vamos crear
+    - name: Es el nombre del campo (como identificador)
+    *- value: Es el valor que tendra nuestro campo
+    - placeholder: Agregar texto dentro del input
+    - required: Es un atributo que nos permite definir que el campo es obligatorio o requerido.
+-->
+<!-- Un formulario es una de las formas mas basicas que tenemos para recopilar informacion de los usuarios (informacion de inicio de sesion, de contacto, registro para un boletin o citas) 
+
+Para trabajar con formularios, vamos a utilizar la etiqueta form para indicar el espacio donde estara dicho elemento dentro de nuestro documento
+
+La etiqueta input nos sirve para introducir los datos
+
+La etiqueta label nos sirve para darle un nombre o una descripcion al input y asi saber que informacion recibe
+
+
+Atributos
+
+Atributos para la etiqueta form:
+
+    - action: especifica a donde vamos a enviar los datos cuando le damos clic en el boton enviar
+    - method: es el metodo de envio de los datos (get, post)
+
+
+Atributos para la etiqueta input
+
+    - type: Modifica el tipo de campo que vamos crear
+    - name: Es el nombre del campo (como identificador)
+    *- value: Es el valor que tendra nuestro campo
+    - placeholder: Agregar texto dentro del input
+    - required: Es un atributo que nos permite definir que el campo es obligatorio o requerido.
+
+-->
+<!--Ahora bien, dentro del atributo type tenemos:
+
+    - button: Nos permite crear un boton vacio y sin ningun comportamiento.
+    - checkbox: Nos permite crear una casilla de verificacion para seleccionas o deseleccionar valores individuales.
+    - date: Nos permite crear un campo de fecha (año, mes y dia, sin tiempo).
+    - email: Nos permite crear un campo de correo electronico. Parece una entrada de texto, pero tiene parametros de validacion determinados, en este caso agregar un arroba.
+    - file: Nos permite crear un campo para poder subir un archivo.
+    - number: Nos permite crear un campo para introducir un numero. Podemos agregarlo de forma manual o apoyarnos con las flechas que se muestran en el campo.
+    - password: Nos permite crear un campo de contraseña. Los datos que se ingresen en este campo, no se mostraran en pantalla.
+    - radio: Nos permite crear un campo de radio que funciona como una casilla de verificacion. Nos permite seleccioar un unico valor entre varias opciones con el mismo valor de nombre.
+    - range: Nos permite crear un campo de rango.
+    - reset: Nos permite crear un boton de reseteo para borrar los datos que se ingresaron en el formulario.
+    - search: Nos permite crear un campo de busqueda.
+    - submit: Nos permite crear un boton de envio de datos.
+    - tel: Nos permite crear un campo de telefono. Cuando se ingrese un numero, este se mostrara en formato de telefono (teclado telefonico en algunos dispositivos).
+    - text: Nos permite crear un campo de texto de una sola linea.. Este es el valor por defecto de la etiqueta input.
+    - time: Nos permite crear un campo de hora sin zona horaria-->
